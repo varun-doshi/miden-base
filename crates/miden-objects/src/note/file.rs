@@ -6,13 +6,12 @@ use std::{
     vec::Vec,
 };
 
+use super::{Note, NoteDetails, NoteId, NoteInclusionProof, NoteTag};
+use crate::block::BlockNumber;
 #[cfg(feature = "std")]
 use crate::utils::{
     ByteReader, ByteWriter, Deserializable, DeserializationError, Serializable, SliceReader,
 };
-
-use super::{Note, NoteDetails, NoteId, NoteInclusionProof, NoteTag};
-use crate::block::BlockNumber;
 
 const MAGIC: &str = "note";
 
